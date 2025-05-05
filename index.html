@@ -1,27 +1,606 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>İlknur Xalı - Xalça Yuma və Təmizləmə Xidməti</title>
-  <meta name="description" content="İlknur Xalı xalça yuma və təmizləmə xidmətləri ilə xalçalarınızı ilk günkü kimi parlaq və təmiz hala gətirir. Keyfiyyətli, sürətli və etibarlı xidmət." />
-  <meta name="keywords" content="xalça yuma, xalca temizleme, İlknur Xalı, xalça təmizləmə, xalça yuma Bakı, evdə xalça yuma, xalça yuma xidməti, xalça quru təmizləmə, İlknur xalça yuma, təmiz xalça xidməti" />
-  <meta name="author" content="İlknur Xalı" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
 
-  <!-- Favicon -->
-  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <!-- Animate Css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
 
-  <!-- Sosial media linkləri -->
-  <link rel="canonical" href="https://www.ilknurxali.az" />
-  <link rel="alternate" hreflang="az" href="https://www.ilknurxali.az" />
+    <!-- Bootstrap 5 CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
 
-  <!-- Google Fonts: Poppins (Primary), Roboto (Secondary) -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet" />
+    <!-- Bootstrap 5 JS Bundle (Popper.js daxil) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="/styles.css" />
-</head>
-<body>
-  <h1>salam</h1>
-</body>
+    <!-- Google Poppins Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome Cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="./wwwroot/css/style.css" />
+  </head>
+  <body>
+    <!-- Header section start -->
+    <header>
+      <!-- Header Top Content -->
+      <div class="header-top-content">
+        <div
+          class="top-container container d-flex justify-content-between align-items-center py-3"
+        >
+          <div class="top-contact d-flex align-items-center">
+            <ul class="top-contact-list list-unstyled d-flex gap-4 m-0">
+              <li class="top-contact-item">
+                <i class="fa-solid fa-phone text-light"></i>
+                <span class="text-light" href="tel:+1234567890"
+                  >+123 456 7890</span
+                >
+              </li>
+              <li class="top-contact-item">
+                <i class="fa-solid fa-envelope text-light"></i>
+                <span class="text-light">ilknurxali@info.com</span>
+              </li>
+            </ul>
+          </div>
+          <div class="top-social">
+            <ul class="top-social-list d-flex list-unstyled gap-3 m-0">
+              <li class="top-social-item">
+                <a href="#"
+                  ><img
+                    src="./wwwroot/images/icons/icons8-instagram (1).svg"
+                    alt=""
+                /></a>
+              </li>
+              <li class="top-social-item">
+                <a href="#"
+                  ><img
+                    src="./wwwroot/images/icons/icons8-whatsapp (1).svg"
+                    alt=""
+                /></a>
+              </li>
+              <li class="top-social-item">
+                <a href="#"
+                  ><img src="./wwwroot/images/icons/icons8-tiktok.svg" alt=""
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Header Nav Content -->
+      <nav
+        class="container d-flex justify-content-between align-items-center py-4"
+      >
+        <!-- Logo -->
+        <div class="logo">
+          <a href="#"
+            ><img src="./wwwroot/images/logo/mavi (1) 1.png" alt=""
+          /></a>
+        </div>
+
+        <!-- Nav Menu -->
+        <ul class="nav-list d-flex list-unstyled gap-5 m-0">
+          <li class="nav-item">
+            <a href="#home-hero" class="nav-link">Ana Səhifə</a>
+          </li>
+          <li class="nav-item">
+            <a href="#about" class="nav-link">Haqqımızda</a>
+          </li>
+          <li class="nav-item">
+            <a href="#service" class="nav-link">Xidmətlər</a>
+          </li>
+          <li class="nav-item">
+            <a href="#price" class="nav-link">Paketlər</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link">Əlaqə</a>
+          </li>
+        </ul>
+        <div class="nav-btns d-flex">
+          <a href="#">Elaqe saxla</a>
+        </div>
+      </nav>
+    </header>
+    <!-- Header section end -->
+
+    <!-- Hero section start -->
+    <section class="container hero-bg" id="home-hero">
+      <!-- Hero Content -->
+      <div class="hero-content">
+        <h1>Təmizliyə <span>ilk nur</span> kimi toxunuruq</h1>
+        <p class="text-light mt-4 mb-4">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea aliquid
+          inventore, <br />
+          eligendi qui saepe, atque optio, quibusdam mollitia sunt nostrum
+          nobis! <br />
+          Laboriosam eveniet quas animi libero totam non quia aspernatur.
+        </p>
+        <div class="hero-btn">
+          <a href="№">Xidmətdən indi faydalan</a>
+        </div>
+      </div>
+
+      <!-- Hero Circle Image -->
+      <div class="hero-circle">
+        <img src="./wwwroot/images/bg-hero/Group 88.png" alt="" />
+      </div>
+    </section>
+    <!-- Hero section end -->
+
+    <!-- About section start -->
+    <section class="container about-container" id="about">
+      <!-- About Title -->
+      <h1 class="text-center section-title">Haqqımızda</h1>
+
+      <!-- About Content Box -->
+      <div class="about-content d-flex justify-content-between">
+        <!-- About Images -->
+        <div class="about-img">
+          <img src="./wwwroot/images/about/Group 83.png" alt="" />
+        </div>
+
+        <!-- About Info -->
+        <div class="about-info-box">
+          <h2>
+            İlknur Xalça Yuma, <br />
+            təmizliyin və güvənin ünvanı!
+          </h2>
+          <p class="mt-2">
+            Biz "İlknur Təmizlik" şirkəti olaraq, yaşadığınız və çalışdığınız
+            məkanlara təmizlik və təravət gətirmək üçün xidmətinizdəyik.
+            Peşəkarlıq, etibarlılıq və ən yüksək keyfiyyət standartları ilə
+            fəaliyyət göstərərək, sizə "əla xidmət" təqdim etməyi əsas
+            missiyamız hesab edirik.
+          </p>
+          <div class="about-list">
+            <ul>
+              <li>
+                <img
+                  class="me-2"
+                  src="./wwwroot/images/icons/check-mark-button-svgrepo-com.svg"
+                  alt=""
+                />
+                <span>Məhsulların evdən götürülməsi və qaytarılması</span>
+              </li>
+              <li>
+                <img
+                  class="me-2"
+                  src="./wwwroot/images/icons/check-mark-button-svgrepo-com.svg"
+                  alt=""
+                />
+                <span>Müasir avadanlıqlarla xalçaların yuyulması</span>
+              </li>
+              <li>
+                <img
+                  class="me-2"
+                  src="./wwwroot/images/icons/check-mark-button-svgrepo-com.svg"
+                  alt=""
+                />
+                <span>Məsuliyyətli və sürətli iş, yüksək keyfiyyət</span>
+              </li>
+              <li>
+                <img
+                  class="me-2"
+                  src="./wwwroot/images/icons/check-mark-button-svgrepo-com.svg"
+                  alt=""
+                />
+                <span
+                  >Profesional komandamız ilə evinizə təmizlik gətiririk</span
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About section end -->
+
+    <!-- Service section start -->
+    <section class="container service-container" id="service">
+      <!-- Service title -->
+      <h1 class="section-title text-center">Xidmətlər</h1>
+
+      <!-- Service Content -->
+      <div
+        class="service-content d-flex justify-content-between align-items-center"
+      >
+        <!-- Servicec 1 -->
+        <div
+          class="service-box d-flex justify-content-center align-items-center flex-column"
+        >
+          <div class="service-img">
+            <img src="./wwwroot/images/icons/Group 30.png" alt="" />
+          </div>
+          <h3>Xalça yuma</h3>
+          <p class="text-center">
+            Xalçaların yuyulması, təmizlənməsi və qaytarılması xidmətləri ilə
+            sizə
+          </p>
+        </div>
+
+        <!-- Servicec 2 -->
+        <div
+          class="service-box d-flex justify-content-center align-items-center flex-column"
+        >
+          <div class="service-img">
+            <img src="./wwwroot/images/icons/Group 30.png" alt="" />
+          </div>
+          <h3>Xalça yuma</h3>
+          <p class="text-center">
+            Xalçaların yuyulması, təmizlənməsi və qaytarılması xidmətləri ilə
+            sizə
+          </p>
+        </div>
+
+        <!-- Servicec 3 -->
+        <div
+          class="service-box d-flex justify-content-center align-items-center flex-column"
+        >
+          <div class="service-img">
+            <img src="./wwwroot/images/icons/Group 30.png" alt="" />
+          </div>
+          <h3>Xalça yuma</h3>
+          <p class="text-center">
+            Xalçaların yuyulması, təmizlənməsi və qaytarılması xidmətləri ilə
+            sizə
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- Service section end -->
+
+    <!-- Price section start -->
+    <section class="container price-container" id="price">
+      <!-- Price title -->
+      <h1 class="section-title text-center">Paketlər</h1>
+
+      <!-- Price Content -->
+      <div
+        class="price-content d-flex justify-content-between align-items-center"
+      >
+        <!-- Price Box 1 -->
+        <div class="price-box">
+          <!-- Price img -->
+          <div class="price-img">
+            <img src="./wwwroot/images/price/card1.jpg" alt="" />
+          </div>
+
+          <!-- Price list -->
+          <div class="price-list">
+            <ul>
+              <li>
+                <img
+                  class="me-2"
+                  src="./wwwroot/images/icons/newcheck.svg"
+                  alt=""
+                />
+                <span>Xalçaların evdən götürülməsi</span>
+              </li>
+              <li>
+                <img
+                  class="me-2"
+                  src="./wwwroot/images/icons/newcheck.svg"
+                  alt=""
+                />
+                <span>3 xalça yuyulması</span>
+              </li>
+              <li>
+                <img
+                  class="me-2"
+                  src="./wwwroot/images/icons/newcheck.svg"
+                  alt=""
+                />
+                <span>Xalçalarım evə qaytarılması</span>
+              </li>
+              <li>
+                <img
+                  class="me-2"
+                  src="./wwwroot/images/icons/newcheck.svg"
+                  alt=""
+                />
+                <span>Xüsusi yuyucu tozlarla təmizlik</span>
+              </li>
+              <li>
+                <img
+                  class="me-2"
+                  src="./wwwroot/images/icons/newcheck.svg"
+                  alt=""
+                />
+                <span>Yeni və müasir cihazlar</span>
+              </li>
+              <li>
+                <img
+                  class="me-2"
+                  src="./wwwroot/images/icons/newcheck.svg"
+                  alt=""
+                />
+                <span>Ətirləmə və dezinfeksiya</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Price btn -->
+          <div class="price-btn text-center">
+            <a href="#">İndi sifariş et</a>
+          </div>
+        </div>
+        <!-- Price Box 2 -->
+        <div class="price-box">
+          <!-- Price img -->
+          <div class="price-img">
+            <img src="./wwwroot/images/price/card1.jpg" alt="" />
+          </div>
+
+          <!-- Price list -->
+          <div class="price-list">
+            <ul>
+              <li>
+                <img
+                  class="me-2"
+                  src="./wwwroot/images/icons/newcheck.svg"
+                  alt=""
+                />
+                <span>Xalçaların evdən götürülməsi</span>
+              </li>
+              <li>
+                <img
+                  class="me-2"
+                  src="./wwwroot/images/icons/newcheck.svg"
+                  alt=""
+                />
+                <span>3 xalça yuyulması</span>
+              </li>
+              <li>
+                <img
+                  class="me-2"
+                  src="./wwwroot/images/icons/newcheck.svg"
+                  alt=""
+                />
+                <span>Xalçalarım evə qaytarılması</span>
+              </li>
+              <li>
+                <img
+                  class="me-2"
+                  src="./wwwroot/images/icons/newcheck.svg"
+                  alt=""
+                />
+                <span>Xüsusi yuyucu tozlarla təmizlik</span>
+              </li>
+              <li>
+                <img
+                  class="me-2"
+                  src="./wwwroot/images/icons/newcheck.svg"
+                  alt=""
+                />
+                <span>Yeni və müasir cihazlar</span>
+              </li>
+              <li>
+                <img
+                  class="me-2"
+                  src="./wwwroot/images/icons/newcheck.svg"
+                  alt=""
+                />
+                <span>Ətirləmə və dezinfeksiya</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Price btn -->
+          <div class="price-btn text-center">
+            <a href="#">İndi sifariş et</a>
+          </div>
+        </div>
+        <!-- Price Box 3 -->
+        <div class="price-box">
+          <!-- Price img -->
+          <div class="price-img">
+            <img src="./wwwroot/images/price/card1.jpg" alt="" />
+          </div>
+
+          <!-- Price list -->
+          <div class="price-list">
+            <ul>
+              <li>
+                <img
+                  class="me-2"
+                  src="./wwwroot/images/icons/newcheck.svg"
+                  alt=""
+                />
+                <span>Xalçaların evdən götürülməsi</span>
+              </li>
+              <li>
+                <img
+                  class="me-2"
+                  src="./wwwroot/images/icons/newcheck.svg"
+                  alt=""
+                />
+                <span>3 xalça yuyulması</span>
+              </li>
+              <li>
+                <img
+                  class="me-2"
+                  src="./wwwroot/images/icons/newcheck.svg"
+                  alt=""
+                />
+                <span>Xalçalarım evə qaytarılması</span>
+              </li>
+              <li>
+                <img
+                  class="me-2"
+                  src="./wwwroot/images/icons/newcheck.svg"
+                  alt=""
+                />
+                <span>Xüsusi yuyucu tozlarla təmizlik</span>
+              </li>
+              <li>
+                <img
+                  class="me-2"
+                  src="./wwwroot/images/icons/newcheck.svg"
+                  alt=""
+                />
+                <span>Yeni və müasir cihazlar</span>
+              </li>
+              <li>
+                <img
+                  class="me-2"
+                  src="./wwwroot/images/icons/newcheck.svg"
+                  alt=""
+                />
+                <span>Ətirləmə və dezinfeksiya</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Price btn -->
+          <div class="price-btn text-center">
+            <a href="#modalOverlay">İndi sifariş et</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Price section end -->
+
+    <!-- Contact section start -->
+    <section class="container contact-container" id="contact">
+      <!-- Contact title -->
+      <h1 class="section-title text-center">Bizimlə əlaqə saxlayın</h1>
+
+      <!-- Contact Content -->
+      <div
+        class="contact-content d-flex justify-content-between align-items-center"
+      >
+        <!-- item 1 -->
+        <div
+          class="contact-box d-flex justify-content-center align-items-center flex-column"
+        >
+          <div class="contact-icon">
+            <img
+              src="./wwwroot/images/icons/telephone-svgrepo-com.svg"
+              alt=""
+            />
+          </div>
+          <p class="mt-3">Hər hansı sualınız var?</p>
+          <h3>+994 99 329 75 75</h3>
+        </div>
+        <!-- item 2 -->
+        <div
+          class="contact-box d-flex justify-content-center align-items-center flex-column colored-contact-item"
+        >
+          <div class="contact-icon">
+            <img src="./wwwroot/images/icons/mail_11877853.png" alt="" />
+          </div>
+          <p class="mt-3">Hər hansı sualınız var?</p>
+          <h3>+994 55 876 87 65</h3>
+        </div>
+        <!-- item 3 -->
+        <div
+          class="contact-box d-flex justify-content-center align-items-center flex-column"
+        >
+          <div class="contact-icon">
+            <img
+              src="./wwwroot/images/icons/location-marker-svgrepo-com.svg"
+              alt=""
+            />
+          </div>
+          <p class="mt-3">Hər hansı sualınız var?</p>
+          <h3>+994 55 876 87 65</h3>
+        </div>
+      </div>
+    </section>
+    <!-- Contact section end -->
+
+    <!-- Scroll-to-top btn start -->
+    <button id="scrollToTopBtn" class="scroll-to-top">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <path d="M18 15l-6-6-6 6" />
+      </svg>
+    </button>
+    <!-- Scroll-to-top btn end -->
+
+    <!-- Footer section start -->
+    <footer class="footer-main">
+      <div class="container d-flex justify-content-between">
+        <div class="footer-box">
+          <img src="./wwwroot/images/logo/mavi (1) 1.png" alt="" />
+          <p class="mt-4">
+            İllərin təcrübəsi ilə xalçanıza <br />
+            yeni həyat veririk.
+          </p>
+        </div>
+        <div class="footer-box">
+          <h3 class="footer-title">Xidmətlər</h3>
+          <ul>
+            <li><a href="#home">Ana Səhifə</a></li>
+            <li><a href="#home">Haqqımızda</a></li>
+            <li><a href="#home">Xidmət</a></li>
+            <li><a href="#home">Paketlər</a></li>
+            <li><a href="#home">Əlaqə</a></li>
+          </ul>
+        </div>
+        <div class="footer-box">
+          <h3 class="footer-title">Xidmətlər</h3>
+          <ul>
+            <li><a href="#home">Ana Səhifə</a></li>
+            <li><a href="#home">Haqqımızda</a></li>
+            <li><a href="#home">Xidmət</a></li>
+            <li><a href="#home">Paketlər</a></li>
+            <li><a href="#home">Əlaqə</a></li>
+          </ul>
+        </div>
+        <div class="footer-box">
+          <h3 class="footer-title">Xidmətlər</h3>
+          <ul>
+            <li><a href="#home">Ana Səhifə</a></li>
+            <li><a href="#home">Haqqımızda</a></li>
+            <li><a href="#home">Xidmət</a></li>
+            <li><a href="#home">Paketlər</a></li>
+            <li><a href="#home">Əlaqə</a></li>
+          </ul>
+        </div>
+        <div class="footer-box">
+          <h3 class="footer-title">Xidmətlər</h3>
+          <ul>
+            <li><a href="#home">Ana Səhifə</a></li>
+            <li><a href="#home">Haqqımızda</a></li>
+            <li><a href="#home">Xidmət</a></li>
+            <li><a href="#home">Paketlər</a></li>
+            <li><a href="#home">Əlaqə</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer section end -->
+
+    <script src="./wwwroot/js/script.js"></script>
+  </body>
 </html>

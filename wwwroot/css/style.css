@@ -1,0 +1,472 @@
+* {
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+}
+
+body {
+	font-family: Poppins, sans-serif;
+}
+
+a {
+		text-decoration: none;
+}
+
+.container {
+		padding-left: 0px !important;
+		padding-right: 0px !important;
+}
+
+/* Header Css start */
+
+.header-top-content {
+	background: linear-gradient(to right, #3C922E 0%, #71b428 44%);
+}
+
+.top-container .top-social-list .top-social-item a img {
+	width: 30px;
+	height: 30px;
+}
+
+
+nav .nav-list .nav-item a {
+	color: #323232;
+	transition: .3s;
+	position: relative;
+}
+
+nav .nav-list .nav-item a::before {
+	content: '';
+	position: absolute;
+	top: 100%;
+	left: 0px;
+	width: 0%;
+	height: 2px;
+	background: #3C922E;
+	transition: .3s;
+}
+
+nav .nav-list .nav-item a:hover::before {
+	width: 100%;
+	transition: .3s;
+}
+
+nav .nav-list .nav-item a:hover {
+	color: #327927;
+	transition: .3s;
+}
+
+nav .nav-btns {
+	background: linear-gradient(to right, #3C922E 0%, #71b428 100%);
+	border-radius: 20px;
+}
+
+nav .nav-btns a {
+	padding: 8px 14px;
+	color: white;
+}
+
+/* Header Css End */
+
+
+
+/* Hero BG Start */
+.hero-bg {
+  min-height: 450px;
+	border-radius: 25px;
+	background-image: url(../images/bg-hero/Group\ 82.png);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+}
+
+.hero-bg .hero-content {
+	width: 60%;
+	height: auto;
+	position: absolute;
+	top: 28%;
+	left: 5%;
+	/* background-color: red; */
+}
+
+.hero-bg .hero-content h1 {
+	color: white;
+}
+
+.hero-bg .hero-content h1 span {
+	font-size: 55px;
+	font-weight: 800;
+	background: linear-gradient(to right, #3C922E, #71B428);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  display: inline-block;
+}
+
+.hero-bg .hero-content p {
+	color: white;
+	font-weight: regular;
+}
+
+
+.hero-bg .hero-content .hero-btn {
+	background: linear-gradient(to right, #3C922E 0%, #71b428 100%);
+	width: max-content;
+	border-radius: 20px;
+	padding: 12px 16px;
+	color: white;
+	transition: .3s ease-in-out;
+}
+
+.hero-bg .hero-content .hero-btn a {
+	color: white;
+}
+
+.hero-bg .hero-content .hero-btn:hover {
+	background: linear-gradient(to right, #71b428 0%, #3C922E 100%);
+	transition: .3s ease-in-out;
+}
+
+.hero-bg .hero-circle {
+	width: min-content;
+	height: min-content;
+	position: absolute;
+	top: 10%;
+	right: 5%;
+}
+
+/* Hero Bg End */
+
+
+
+/* About Css start */
+.about-container {
+	height: min-content;
+	border-radius: 20px;
+	margin-top: 80px;
+}
+
+.section-title {
+	font-size: 36px;
+	font-weight: semi-bold;
+	background: linear-gradient(to right, #3C922E, #71B428);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.about-container .about-content {
+	width: 100%;
+	height: auto;
+	margin-top: 40px;
+}
+
+.about-container .about-content .about-img {
+	width: 40%;
+	height: min-content;
+}
+
+.about-container .about-content .about-info-box {
+	width: 60%;
+	height: 408px;
+	padding-left: 80px;
+}
+
+.about-info-box h2 {
+	line-height: 57px;
+	font-size: 36px;
+	color: #323232;
+	font-weight: 700;
+}
+
+.about-info-box p {
+	font-size: 18px;
+	color: #7A7A7A;
+}
+
+.about-info-box .about-list {
+	margin-top: 25px;
+}
+
+.about-info-box .about-list ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.about-info-box .about-list ul li {
+	padding-bottom: 15px;
+}
+
+.about-info-box .about-list ul li img {
+	width: 18px;
+	height: 18px;
+}
+
+.about-info-box .about-list ul li span {
+	font-size: 18px;
+	color: #7A7A7A;
+}
+/* About section end */
+
+
+
+/* Service Css start */
+.service-container {
+	height: min-content;
+	margin-top: 80px;
+}
+
+.service-container .service-content {
+	width: 100%;
+	height: min-content;
+	margin-top: 40px;
+}
+
+.service-content .service-box {
+	width: 411px;
+	height: 265px;
+	border-radius: 25px;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+	padding: 0px 30px;
+}
+
+.service-box img {
+	width: 70px;
+	height: 70px;
+	object-fit: cover;
+}
+
+.service-box h3 {
+	font-size: 20px;
+	margin-top: 25px;
+	color: #323232;
+}
+
+.service-box p {
+	font-size: 16px;
+	color: #7A7A7A;
+	margin-top: 15px;
+	margin-bottom: 0px;
+}
+/* Servicee section end */
+
+
+/* Price css start */
+
+.price-container {
+	height: min-content;
+	margin-top: 80px;
+}
+
+.price-container .price-content {
+	height: min-content;
+	margin-top: 40px;
+}
+
+.price-content .price-box {
+	width: 411px;
+	height: 550px;
+	border-radius: 15px;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+}
+
+.price-box .price-img {
+	height: 207px;
+	border-bottom: 1px solid #323232;
+	position: relative;
+}
+
+.price-img::before {
+	content: '40 AZN';
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(to bottom, rgba(33, 35, 33, 0.5	), rgba(53, 56, 50, 0.7));
+	border-radius: 15px 15px 0px 0px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 32px;
+	font-weight: 700;
+	color: white;
+}
+
+.price-img img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 15px 15px 0px 0px;
+}
+
+.price-content .price-box .price-list {
+	width: 100%;
+	height: min-content;
+	padding: 25px 30px;
+}
+
+.price-content .price-box .price-list ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.price-content .price-box .price-list ul li {
+	padding-bottom: 15px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	color: #323232;
+}
+
+.price-content .price-box .price-list ul li img {
+	width: 20px;
+	height: 20px;
+	object-fit: cover;
+}
+
+.price-content .price-box .price-btn a {
+	width: max-content;
+	background: linear-gradient(to right, #3C922E 0%, #71b428 100%);
+	border-radius: 20px;
+	padding: 12px 16px;
+	color: white;
+}
+/* Price css end */
+
+
+
+/* Contact css start */
+.contact-container {
+	height: min-content;
+	margin-top: 80px;
+}
+
+.contact-container .contact-content {
+	height: min-content;
+	margin-top: 40px;
+}
+
+.contact-content .contact-box {
+	width: 34%;
+	height: 240px;
+	padding: 40px 70px;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+}
+
+.contact-content .contact-box .contact-icon img {
+	width: 60px;
+	height: 60px;
+	object-fit: cover;
+}
+
+.contact-content .contact-box p {
+	font-size: 22px;
+	color: #777777;
+}
+
+.contact-content .contact-box h3 {
+	font-size: 25px;
+	font-weight: 500;
+}
+
+.colored-contact-item {
+	background: linear-gradient(to right, #3C922E 0%, #71b428 100%);
+	
+}
+
+.colored-contact-item p,
+.colored-contact-item h3 {
+	color: #fff !important;
+}
+/* Contact css end */
+
+
+/* Scroll Top */
+.scroll-to-top {
+  position: fixed;
+  right: 20px;
+  bottom: 30px;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%; /* Tam dairəvi forma */
+  background: linear-gradient(to right, #3C922E, #71B428); /* Sizin gradient rəngləriniz */
+  color: white;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  z-index: 999;
+}
+
+.scroll-to-top.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.scroll-to-top:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.scroll-to-top svg {
+  width: 20px;
+  height: 20px;
+}
+/* Scroll Top */
+
+
+.footer-main {
+	background: linear-gradient(to right, #3C922E 0%, #71b428 100%);
+	padding: 50px 0px;
+	width: 100%;
+	height: min-content;
+	margin-top: 80px;
+}
+
+.footer-main .container {
+	height: min-content;
+	gap: 40px;
+}
+
+.footer-main .container .footer-box {
+	width: max-content;
+	height: max-content;
+}
+
+.footer-main .container .footer-box p {
+	font-size: 16px;
+	color: #fff;
+}
+
+.footer-main .container .footer-box h3 {
+	font-size: 24px;
+	color: #fff;
+	font-weight: 600;
+	margin-bottom: 15px;
+}
+
+.footer-main .container .footer-box ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.footer-main .container .footer-box ul li {
+	padding-bottom: 15px;
+}
+
+.footer-main .container .footer-box ul li a {
+	color: #fff;
+	font-size: 16px;
+	transition: .3s;
+}
+
