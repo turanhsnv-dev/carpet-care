@@ -6,6 +6,7 @@
 
 body {
 	font-family: Poppins, sans-serif;
+	overflow-x: hidden;
 }
 
 a {
@@ -23,9 +24,20 @@ a {
 	background: linear-gradient(to right, #3C922E 0%, #71b428 44%);
 }
 
-.top-container .top-social-list .top-social-item a img {
-	width: 30px;
-	height: 30px;
+.top-container .top-social-list .top-social-item a {
+	font-size: 24px;
+	color: white;
+	transition: bottom .3s ease;
+}
+
+
+.top-container .top-social-list .top-social-item a i {
+	display: inline-block;
+	transition: transform 0.3s ease;
+}
+
+.top-container .top-social-list .top-social-item a:hover i {
+	transform: translateY(-7px);
 }
 
 
@@ -72,7 +84,7 @@ nav .nav-btns a {
 
 /* Hero BG Start */
 .hero-bg {
-  min-height: 450px;
+  min-height: 580px;
 	border-radius: 25px;
 	background-image: url(../images/bg-hero/Group\ 82.png);
 	background-position: center;
@@ -132,8 +144,8 @@ nav .nav-btns a {
 	width: min-content;
 	height: min-content;
 	position: absolute;
-	top: 10%;
-	right: 5%;
+	top: 15%;
+	right: 6%;
 }
 
 /* Hero Bg End */
@@ -159,7 +171,7 @@ nav .nav-btns a {
 .about-container .about-content {
 	width: 100%;
 	height: auto;
-	margin-top: 40px;
+	margin-top: 60px;
 }
 
 .about-container .about-content .about-img {
@@ -221,7 +233,7 @@ nav .nav-btns a {
 .service-container .service-content {
 	width: 100%;
 	height: min-content;
-	margin-top: 40px;
+	margin-top: 60px;
 }
 
 .service-content .service-box {
@@ -262,7 +274,7 @@ nav .nav-btns a {
 
 .price-container .price-content {
 	height: min-content;
-	margin-top: 40px;
+	margin-top: 60px;
 }
 
 .price-content .price-box {
@@ -274,12 +286,11 @@ nav .nav-btns a {
 
 .price-box .price-img {
 	height: 207px;
-	border-bottom: 1px solid #323232;
 	position: relative;
 }
 
 .price-img::before {
-	content: '40 AZN';
+	content: '';
 	position: absolute;
 	top: 0px;
 	left: 0px;
@@ -300,6 +311,23 @@ nav .nav-btns a {
 	height: 100%;
 	object-fit: cover;
 	border-radius: 15px 15px 0px 0px;
+}
+
+.price-img .price-total {
+	padding: 4px 10px;
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	background-color: #05939ffc;
+	border-top-left-radius: 8px;
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+	color: white;
+}
+
+.price-total span {
+	font-size: 14px;
+	font-weight: 700;
 }
 
 .price-content .price-box .price-list {
@@ -347,7 +375,7 @@ nav .nav-btns a {
 
 .contact-container .contact-content {
 	height: min-content;
-	margin-top: 40px;
+	margin-top: 60px;
 }
 
 .contact-content .contact-box {
@@ -426,7 +454,7 @@ nav .nav-btns a {
 
 .footer-main {
 	background: linear-gradient(to right, #3C922E 0%, #71b428 100%);
-	padding: 50px 0px;
+	padding: 100px 0px;
 	width: 100%;
 	height: min-content;
 	margin-top: 80px;
