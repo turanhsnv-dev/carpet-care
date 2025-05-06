@@ -35,7 +35,7 @@
   </head>
   <body>
     <!-- Header section start -->
-    <header>
+    <header class="desc-header">
       <!-- Header Top Content -->
       <div class="header-top-content">
         <div
@@ -75,7 +75,7 @@
 
       <!-- Header Nav Content -->
       <nav
-        class="container d-flex justify-content-between align-items-center py-4"
+        class="container d-flex justify-content-between align-items-center py-4 desk-nav"
       >
         <!-- Logo -->
         <div class="logo">
@@ -257,27 +257,27 @@
     </section>
     <!-- Service section end -->
 
-    <!-- Price section start -->
-    <section class="container price-container scroll-effect" id="price">
-      <!-- Price title -->
+    <!-- package section start -->
+    <section class="container package-container scroll-effect" id="package">
+      <!-- package title -->
       <h1 class="section-title text-center">Paketlər</h1>
 
-      <!-- Price Content -->
+      <!-- package Content -->
       <div
-        class="price-content d-flex justify-content-between align-items-center"
+        class="package-content d-flex justify-content-between align-items-center"
       >
-        <!-- Price Box 1 -->
-        <div class="price-box">
-          <!-- Price img -->
-          <div class="price-img">
+        <!-- package Box 1 -->
+        <div class="package-box">
+          <!-- package img -->
+          <div class="package-img">
             <img src="./wwwroot/images/price/card1.jpg" alt="" />
-            <div class="price-total">
+            <div class="package-total">
               <span>100 AZN</span>
             </div>
           </div>
 
-          <!-- Price list -->
-          <div class="price-list">
+          <!-- package list -->
+          <div class="package-list">
             <ul>
               <li>
                 <img
@@ -330,25 +330,25 @@
             </ul>
           </div>
 
-          <!-- Price btn -->
-          <div class="price-btn text-center">
+          <!-- package btn -->
+          <div class="package-btn text-center">
             <a target="_blank" href="https://wa.me/+994993297575"
               >İndi sifariş et</a
             >
           </div>
         </div>
-        <!-- Price Box 2 -->
-        <div class="price-box">
-          <!-- Price img -->
-          <div class="price-img">
+        <!-- package Box 2 -->
+        <div class="package-box">
+          <!-- package img -->
+          <div class="package-img">
             <img src="./wwwroot/images/price/card1.jpg" alt="" />
-            <div class="price-total">
+            <div class="package-total">
               <span>100 AZN</span>
             </div>
           </div>
 
-          <!-- Price list -->
-          <div class="price-list">
+          <!-- package list -->
+          <div class="package-list">
             <ul>
               <li>
                 <img
@@ -401,25 +401,25 @@
             </ul>
           </div>
 
-          <!-- Price btn -->
-          <div class="price-btn text-center">
+          <!-- package btn -->
+          <div class="package-btn text-center">
             <a target="_blank" href="https://wa.me/+994993297575"
               >İndi sifariş et</a
             >
           </div>
         </div>
-        <!-- Price Box 3 -->
-        <div class="price-box">
-          <!-- Price img -->
-          <div class="price-img">
+        <!-- package Box 3 -->
+        <div class="package-box">
+          <!-- package img -->
+          <div class="package-img">
             <img src="./wwwroot/images/price/card1.jpg" alt="" />
-            <div class="price-total">
+            <div class="package-total">
               <span>80 AZN</span>
             </div>
           </div>
 
-          <!-- Price list -->
-          <div class="price-list">
+          <!-- package list -->
+          <div class="package-list">
             <ul>
               <li>
                 <img
@@ -472,8 +472,8 @@
             </ul>
           </div>
 
-          <!-- Price btn -->
-          <div class="price-btn text-center">
+          <!-- package btn -->
+          <div class="package-btn text-center">
             <a target="_blank" href="https://wa.me/+994993297575"
               >İndi sifariş et</a
             >
@@ -481,7 +481,7 @@
         </div>
       </div>
     </section>
-    <!-- Price section end -->
+    <!-- package section end -->
 
     <!-- Contact section start -->
     <section class="container contact-container scroll-effect" id="contact">
@@ -550,6 +550,38 @@
     </button>
     <!-- Scroll-to-top btn end -->
 
+    <!-- move section start -->
+    <section class="container move-container scroll-effect d-flex justify-content-start align-items-center" id="move">
+      <div class="move-content">
+        <p class="move-title">İlknur Xalı və Təmizlik Şirkəti</p>
+        <h2>
+          Xalçanızı evinizdən alır,  <br />
+          tertəmiz qaytarırıq!
+        </h2>
+        <ul>
+          <li>
+            <img src="./wwwroot/images/icons/accept-check-good-mark-ok-tick-svgrepo-com.svg" alt="">
+            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+          </li>
+          <li>
+            <img src="./wwwroot/images/icons/accept-check-good-mark-ok-tick-svgrepo-com.svg" alt="">
+            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+          </li>
+          <li>
+            <img src="./wwwroot/images/icons/accept-check-good-mark-ok-tick-svgrepo-com.svg" alt="">
+            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+          </li>
+          <li>
+            <img src="./wwwroot/images/icons/accept-check-good-mark-ok-tick-svgrepo-com.svg" alt="">
+            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+          </li>
+        </ul>
+      </div>
+      <div class="move-img">
+        <img src="./wwwroot/images/move/Group 101.png" alt="" />
+      </div>
+    </section>
+
     <!-- Footer section start -->
     <footer class="footer-main scroll-effect">
       <div class="container d-flex justify-content-between">
@@ -616,10 +648,10 @@
         origin: "top",
         distance: "100px",
         easing: "ease-out",
-        scale: 0.8,
+        scale: 0.9,
         opacity: 0,
         reset: false,
-        interval: 800,
+        interval: 300,
         viewFactor: 0.7,
       });
 
@@ -628,7 +660,7 @@
         origin: "right",
         distance: "100px",
         easing: "ease-out",
-        scale: 0.8,
+        scale: 0.9,
         opacity: 0,
         reset: false,
         interval: 300,

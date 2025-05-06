@@ -78,6 +78,8 @@ nav .nav-btns a {
 	color: white;
 }
 
+
+
 /* Header Css End */
 
 
@@ -265,31 +267,31 @@ nav .nav-btns a {
 /* Servicee section end */
 
 
-/* Price css start */
+/* package css start */
 
-.price-container {
+.package-container {
 	height: min-content;
 	margin-top: 80px;
 }
 
-.price-container .price-content {
+.package-container .package-content {
 	height: min-content;
 	margin-top: 60px;
 }
 
-.price-content .price-box {
+.package-content .package-box {
 	width: 411px;
 	height: 550px;
 	border-radius: 15px;
 	box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
 }
 
-.price-box .price-img {
+.package-box .package-img {
 	height: 207px;
 	position: relative;
 }
 
-.price-img::before {
+.package-img::before {
 	content: '';
 	position: absolute;
 	top: 0px;
@@ -306,14 +308,14 @@ nav .nav-btns a {
 	color: white;
 }
 
-.price-img img {
+.package-img img {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
 	border-radius: 15px 15px 0px 0px;
 }
 
-.price-img .price-total {
+.package-img .package-total {
 	padding: 4px 10px;
 	position: absolute;
 	top: 10px;
@@ -325,24 +327,24 @@ nav .nav-btns a {
 	color: white;
 }
 
-.price-total span {
+.package-total span {
 	font-size: 14px;
 	font-weight: 700;
 }
 
-.price-content .price-box .price-list {
+.package-content .package-box .package-list {
 	width: 100%;
 	height: min-content;
 	padding: 25px 30px;
 }
 
-.price-content .price-box .price-list ul {
+.package-content .package-box .package-list ul {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
 }
 
-.price-content .price-box .price-list ul li {
+.package-content .package-box .package-list ul li {
 	padding-bottom: 15px;
 	display: flex;
 	justify-content: flex-start;
@@ -350,13 +352,13 @@ nav .nav-btns a {
 	color: #323232;
 }
 
-.price-content .price-box .price-list ul li img {
+.package-content .package-box .package-list ul li img {
 	width: 20px;
 	height: 20px;
 	object-fit: cover;
 }
 
-.price-content .price-box .price-btn a {
+.package-content .package-box .package-btn a {
 	width: max-content;
 	background: linear-gradient(to right, #3C922E 0%, #71b428 100%);
 	border-radius: 20px;
@@ -452,6 +454,75 @@ nav .nav-btns a {
 /* Scroll Top */
 
 
+
+/* move css start */
+.move-container{
+	height: 570px;
+	margin-top: 80px;
+	border-radius: 25px;
+	background-image: url(../images/move/Group\ 102\ \(1\).png);
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	position: relative;
+}
+
+.move-container .move-img {
+	width: min-content;
+	height: min-content;
+	position: absolute;
+	top: 30px;
+	right: 50px;
+}
+
+.move-container .move-content {
+	width: 55%;
+	height: min-content;
+	margin-left: 5%;
+}
+
+.move-content p {
+	font-size: 18px;
+	background: linear-gradient(to right, #3C922E, #71B428);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+	font-weight: 700;
+}
+
+.move-content h2 {
+	font-size: 42px;
+	color: white;
+	line-height: 70px;
+}
+
+.move-content ul {
+	list-style-type: none;	
+margin: 20px 0px 0px;
+padding: 0;
+display: flex;
+flex-direction: column;
+gap: 20px;
+}
+
+.move-content ul li {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	color: white;
+}
+
+.move-content ul li img {
+	width: 20px;
+	height: 20px;
+	object-fit: cover;
+	margin-right: 10px;
+}
+/* move css end */
+
+
+
+/* footer css start */
 .footer-main {
 	background: linear-gradient(to right, #3C922E 0%, #71b428 100%);
 	padding: 100px 0px;

@@ -1,3 +1,12 @@
+const hamburger = document.querySelector(".hamburger");
+const mobileHeader = document.querySelector(".mobile-header");
+
+hamburger.addEventListener("click", () => {
+  mobileHeader.classList.toggle("active");
+});
+
+
+
 const scrollToTopBtn = document.getElementById('scrollToTopBtn');
 
 window.addEventListener('scroll', () => {
