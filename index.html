@@ -1,12 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXXXXX-X"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "UA-XXXXXXXXX-X");
+    </script>
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta
+      name="description"
+      content="İlknur Xalı - keyfiyyətli təmizlik şirkəti"
+    />
+    <meta
+      name="keywords"
+      content="İlknur Xalı, xalça, divan, kreslo, təmizlik, yuyucu, interyer dizaynı, dekorativ xalçalar, lüks divan, əla keyfiyyətli xalça yuma, müasir texnalogiya, döşək, yorğan, palaz"
+    />
+    <meta name="author" content="Ilknur Xalı" />
+    <meta name="robots" content="index, follow" />
+    <meta name="language" content="azerbaijani" />
+    <meta name="theme-color" content="#3c922e" />
+    <meta property="og:title" content="İlknur Xalı - Təmizlik Şirkəti" />
+    <meta
+      property="og:description"
+      content="İlknur Xalı - Bakıdakı ən yüksək keyfiyyətli xalçalar, divanlar və kresloların yuyulması üzrə peşəkar xidmətlər təqdim edirik."
+    />
+
+    <meta
+      property="og:image"
+      content="http://127.0.0.1:5500/wwwroot/images/bg-hero/Group%2088.png"
+    />
+    <meta property="og:url" content="https://ilknurxali.az/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="aze_AZE" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="İlknur Xalı - Təmizlik Şirkəti" />
+    <meta
+      name="twitter:description"
+      content="İlknur Xalı - Bakıdakı ən yüksək keyfiyyətli xalçalar, divanlar və kresloların yuyulması üzrə peşəkar xidmətlər təqdim edirik."
+    />
+    <meta
+      name="twitter:image"
+      content="http://127.0.0.1:5500/wwwroot/images/bg-hero/Group%2082.png"
+    />
+    <meta name="twitter:site" content="@İlknurXali" />
+    <meta property="og:site_name" content="İlknur Xalı" />
+    <meta property="og:phone_number" content="+994 99 329 75 75" />
+    <meta property="og:email" content=" infoilknurxali@mail.com" />
+    <meta property="og:whatsapp" content="https://wa.me/994993297575" />
+    <meta
+      property="og:instagram"
+      content="https://www.instagram.com/ilknurxali"
+    />
+    <meta property="og:tiktok" content="https://www.tiktok.com/@ilknurxali" />
+    <meta property="og:address" content="Bakı, Azərbaycan" />
+    <meta property="og:postal_code" content="AZ1000" />
+    <meta property="og:country_name" content="Azərbaycan" />
+    <meta
+      property="og:street_address"
+      content="Bakı şəhəri, Nizami rayonu, 28 May küçəsi, 12A"
+    />
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "İlknur Xalı",
+        "description": "İlknur Xalı - Bakıdakı ən yüksək keyfiyyətli xalçalar, divanlar və kresloların yuyulması üzrə peşəkar xidmətlər təqdim edirik.",
+        "url": "https://ilknurxali.az/",
+        "telephone": " +994 99 329 75 75",
+        "address": {
+          "@type": "AZ1000",
+          "addressLocality": "Bakı",
+          "streetAddress": "28 May No:214",
+          "addressCountry": "AZE"
+        },
+        "sameAs": [
+          "https://www.instagram.com/ilknurxali",
+          "https://www.tiktok.com/@ilknurxali",
+          "https://wa.me/ +994993297575"
+        ]
+      }
+    </script>
+
+    <title>İlknur Xalı - Təmizlik şirkəti</title>
 
     <!-- Animate Css -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      href="http://127.0.0.1:5500/wwwroot/images/logo/mavi%20(1)%201.png"
+      type="image/x-icon"
+    />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://ilknurxali.az/" />
 
     <!-- Bootstrap 5 CSS -->
     <link
@@ -45,8 +145,8 @@
             <ul class="top-contact-list list-unstyled d-flex gap-4 m-0">
               <li class="top-contact-item">
                 <i class="fa-solid fa-phone text-light"></i>
-                <span class="text-light" href="tel:+1234567890"
-                  >+123 456 7890</span
+                <span class="text-light" href="tel:+994993297575"
+                  >+994 99 329 75 75</span
                 >
               </li>
               <li class="top-contact-item">
@@ -269,10 +369,10 @@
         <!-- package Box 1 -->
         <div class="package-box">
           <!-- package img -->
-          <div class="package-img">
+          <div class="package-img standart">
             <img src="./wwwroot/images/price/card1.jpg" alt="" />
             <div class="package-total">
-              <span>100 AZN</span>
+              <span>50 AZN</span>
             </div>
           </div>
 
@@ -340,10 +440,10 @@
         <!-- package Box 2 -->
         <div class="package-box">
           <!-- package img -->
-          <div class="package-img">
+          <div class="package-img gold">
             <img src="./wwwroot/images/price/card1.jpg" alt="" />
             <div class="package-total">
-              <span>100 AZN</span>
+              <span>150 AZN</span>
             </div>
           </div>
 
@@ -411,10 +511,10 @@
         <!-- package Box 3 -->
         <div class="package-box">
           <!-- package img -->
-          <div class="package-img">
+          <div class="package-img silver">
             <img src="./wwwroot/images/price/card1.jpg" alt="" />
             <div class="package-total">
-              <span>80 AZN</span>
+              <span>100 AZN</span>
             </div>
           </div>
 
@@ -606,27 +706,31 @@
     </section>
     <!-- move section end -->
 
-    <div class="map">
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d93180.59847035275!2d49.55267225578653!3d40.57927170821003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x403096bef72bb5c5%3A0x93fe43f65c538c9!2zR8O8dmVyY2luIFBhcmvEsQ!5e0!3m2!1str!2saz!4v1746578487970!5m2!1str!2saz"
-        allowfullscreen=""
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-      ></iframe>
-    </div>
-
     <!-- Footer section start -->
     <footer class="footer-main scroll-effect">
       <div class="container d-flex justify-content-between">
         <div class="footer-box">
           <img src="./wwwroot/images/logo/mavi (1) 1.png" alt="" />
           <p class="mt-4">
-            İllərin təcrübəsi ilə xalçanıza <br />
-            yeni həyat veririk.
+            İllərin təcrübəsi ilə xalçanıza yeni həyat <br />
+            veririk. Yaşadığınız və çalışdığınız məkanlara <br />
+            təmizlik və təravət gətirmək <br />
+            üçün xidmətinizdəyik.
           </p>
+          <ul class="list-unstyled d-flex gap-4 mt-4">
+            <li>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+            </li>
+          </ul>
         </div>
         <div class="footer-box">
-          <h3 class="footer-title">Xidmətlər</h3>
+          <h3 class="footer-title">Pages</h3>
           <ul>
             <li><a href="#home">Ana Səhifə</a></li>
             <li><a href="#home">Haqqımızda</a></li>
@@ -636,34 +740,20 @@
           </ul>
         </div>
         <div class="footer-box">
-          <h3 class="footer-title">Xidmətlər</h3>
+          <h3 class="footer-title">Əlaqə</h3>
           <ul>
-            <li><a href="#home">Ana Səhifə</a></li>
-            <li><a href="#home">Haqqımızda</a></li>
-            <li><a href="#home">Xidmət</a></li>
-            <li><a href="#home">Paketlər</a></li>
-            <li><a href="#home">Əlaqə</a></li>
+            <li><a href="#home">+994556749493</a></li>
+            <li><a href="#home">+994 55 674 94 93</a></li>
+            <li><a href="#home">+994 55 674 94 93</a></li>
           </ul>
         </div>
         <div class="footer-box">
-          <h3 class="footer-title">Xidmətlər</h3>
-          <ul>
-            <li><a href="#home">Ana Səhifə</a></li>
-            <li><a href="#home">Haqqımızda</a></li>
-            <li><a href="#home">Xidmət</a></li>
-            <li><a href="#home">Paketlər</a></li>
-            <li><a href="#home">Əlaqə</a></li>
-          </ul>
-        </div>
-        <div class="footer-box">
-          <h3 class="footer-title">Xidmətlər</h3>
-          <ul>
-            <li><a href="#home">Ana Səhifə</a></li>
-            <li><a href="#home">Haqqımızda</a></li>
-            <li><a href="#home">Xidmət</a></li>
-            <li><a href="#home">Paketlər</a></li>
-            <li><a href="#home">Əlaqə</a></li>
-          </ul>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d93180.59847035275!2d49.55267225578653!3d40.57927170821003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x403096bef72bb5c5%3A0x93fe43f65c538c9!2zR8O8dmVyY2luIFBhcmvEsQ!5e0!3m2!1str!2saz!4v1746578487970!5m2!1str!2saz"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
         </div>
       </div>
     </footer>

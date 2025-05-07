@@ -24,5 +24,3 @@ scrollToTopBtn.addEventListener('click', () => {
   });
 });
 
-
-
