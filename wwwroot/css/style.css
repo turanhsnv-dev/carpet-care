@@ -373,26 +373,38 @@ nav .nav-btns a {
 }
 
 .price-content .price-cart:nth-child(7) {
-  background-image: url(https://www.kirkambarmobilya.com/assets/img/603633212f25fproduct.jpeg);
+  background-image: url(https://ideacdn.net/idea/nv/28/myassets/products/606/81.jpg?revision=1732259661);
 }
 
 .price-content .price-cart:nth-child(8) {
-  background-image: url(https://www.isbiryatak.com/hypersense-paket-yayli-yatak-paket-yay-teknolojisi-isbir-yatak-hypersense-1904-43-B.jpg);
+  background-image: url(https://www.kirkambarmobilya.com/assets/img/603633212f25fproduct.jpeg);
 }
 
 .price-content .price-cart:nth-child(9) {
-  background-image: url(https://www.othellobedding.com/othello-woolla-yun-yorgan-195x215-cm-yun-yorgan-5574-59-B.jpg);
+  background-image: url(https://static.ticimax.cloud/64507/uploads/urunresimleri/buyuk/yun-yorgan-1-f154.jpg);
 }
 
 .price-content .price-cart:nth-child(10) {
-  background-image: url(https://linensociety.com/cdn/shop/products/heirloom-pillow_14294b09-8232-4d5d-a305-022b802669ab.jpg?v=1584402804&width=1400);
+  background-image: url(https://strgimgr.umico.az/sized/840/773511-c0126b61ddfcc34f987a718d73100f5a.jpg);
 }
 
 .price-content .price-cart:nth-child(11) {
-  background-image: url(https://witcdn.isbiryatak.com/enweighted-blanked-isi-dengeleyici-yorganlar-isbir-yatak-1588-36-B.jpg);
+  background-image: url(https://www.isbiryatak.com/hypersense-paket-yayli-yatak-paket-yay-teknolojisi-isbir-yatak-hypersense-1904-43-B.jpg);
 }
 
 .price-content .price-cart:nth-child(12) {
+  background-image: url(https://ideacdn.net/idea/hs/12/myassets/products/718/bordo.jpg?revision=1729000713);
+}
+
+.price-content .price-cart:nth-child(13) {
+  background-image: url(https://linensociety.com/cdn/shop/products/heirloom-pillow_14294b09-8232-4d5d-a305-022b802669ab.jpg?v=1584402804&width=1400);
+}
+
+.price-content .price-cart:nth-child(14) {
+  background-image: url(https://witcdn.isbiryatak.com/enweighted-blanked-isi-dengeleyici-yorganlar-isbir-yatak-1588-36-B.jpg);
+}
+
+.price-content .price-cart:nth-child(15) {
   background-image: url(https://cdn.decornation.in/wp-content/uploads/2020/07/modern-dining-table-chairs.jpg);
 }
 
@@ -513,7 +525,7 @@ img {
 #item-2:checked ~ .cards #song-1,
 #item-3:checked ~ .cards #song-2 {
   transform: translatex(-40%) scale(0.8);
-  opacity: 0.4;
+  opacity: 0.8;
   z-index: 0;
 }
 
@@ -521,7 +533,7 @@ img {
 #item-2:checked ~ .cards #song-3,
 #item-3:checked ~ .cards #song-1 {
   transform: translatex(40%) scale(0.8);
-  opacity: 0.4;
+  opacity: 0.8;
   z-index: 0;
 }
 
@@ -739,6 +751,8 @@ img {
 .footer-main .container .footer-box ul li {
   padding-bottom: 15px;
   color: #fff;
+  transition: .3s;
+  transform: translateX(0px);
 }
 
 .footer-main .container .footer-box ul li img {
@@ -749,6 +763,17 @@ img {
   color: #fff;
   font-size: 19px;
   transition: bottom 0.3s ease;
+  transition: 0.3s;
+}
+
+.footer-main .container .footer-box ul li a:hover {
+  color: #71b428;
+  transition: 0.3s;
+}
+
+.footer-main .container .group-hover ul li:hover {
+  transform: translateX(10px);
+  transition: .3s;
 }
 
 .footer-box ul li a i {
@@ -774,6 +799,7 @@ img {
 .footer-first {
   width: 30%;
 }
+
 
 @media (max-width: 768px) {
   body {
@@ -1089,6 +1115,10 @@ img {
   }
 
   /* Footer Respons start */
+  .footer-main {
+    padding: 100px 0px 50px;
+  }
+
   .footer-main .container {
     flex-direction: column;
     justify-content: flex-start;
