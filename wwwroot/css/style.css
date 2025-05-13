@@ -30,7 +30,6 @@ a {
   transition: bottom 0.3s ease;
 }
 
-
 .top-container .top-social-list .top-social-item a i {
   display: inline-block;
   transition: transform 0.3s ease;
@@ -44,6 +43,10 @@ nav .nav-list .nav-item a {
   color: #323232;
   transition: 0.3s;
   position: relative;
+}
+
+.logo img {
+  width: 120px;
 }
 
 nav .nav-list .nav-item a::before {
@@ -77,13 +80,56 @@ nav .nav-btns a {
   color: white;
 }
 
+.hero-bg .mobile-nav-main,
+.hero-bg .sidebar {
+  display: none;
+}
+
+@media (min-width: 769px) {
+  .mobile-nav {
+    display: none;
+  }
+}
+
 /* Header Css End */
 
 /* Hero BG Start */
+
+.hero-bg.loaded {
+  background: url("../images/bg-hero/Group\ 82.png");
+  background-size: cover;
+  background-position: center 30%;
+  animation: fadeIn 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Küçük placeholder (LQIP) */
+.hero-bg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background: url('images/homebanner-low-quality.jpg') center/cover; */
+  filter: blur(5px);
+  z-index: -1;
+}
+
 .hero-bg {
+  background-color: #f0f0f0; /* Fallback renk */
+  overflow: hidden;
   min-height: 580px;
   border-radius: 25px;
-  background-image: url(../images/bg-hero/Group\ 82.png);
+  /* background-image: url(../images/bg-hero/Group\ 82.png); */
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -96,7 +142,6 @@ nav .nav-btns a {
   position: absolute;
   top: 28%;
   left: 5%;
-  /* background-color: red; */
 }
 
 .hero-bg .hero-content h1 {
@@ -137,7 +182,6 @@ nav .nav-btns a {
 }
 
 .hero-bg .hero-circle {
-  width: min-content;
   height: min-content;
   position: absolute;
   top: 15%;
@@ -149,7 +193,6 @@ nav .nav-btns a {
 /* About Css start */
 .about-container {
   height: min-content;
-  border-radius: 20px;
   margin-top: 80px;
 }
 
@@ -170,12 +213,15 @@ nav .nav-btns a {
 
 .about-container .about-content .about-img {
   width: 40%;
-  height: min-content;
+}
+
+.about-img img {
+  height: 427px;
 }
 
 .about-container .about-content .about-info-box {
   width: 60%;
-  height: 408px;
+  height: auto;
   padding-left: 80px;
 }
 
@@ -257,123 +303,240 @@ nav .nav-btns a {
 }
 /* Servicee section end */
 
-/* package css start */
+/* price css start */
 
-.package-container {
+.price-container {
   height: min-content;
   margin-top: 80px;
 }
 
-.package-container .package-content {
+.price-container .price-content {
   height: min-content;
   margin-top: 60px;
+  gap: 26px;
+  flex-wrap: wrap;
 }
 
-.package-content .package-box {
-  width: 411px;
-  height: 550px;
+.price-content .price-cart {
+  width: 32%;
+  height: 250px;
   border-radius: 15px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px,
-    rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
-}
-
-.package-box .package-img {
-  height: 207px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 80px 30px;
+  color: white;
+  text-align: center;
   position: relative;
+  overflow: hidden;
+  transition: transform 0.4s ease;
+  cursor: pointer;
+  background-color: red;
+  overflow: hidden;
+}
+.price-cart::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* overlay effekti */
+  opacity: 1;
+  transition: opacity 0.4s ease;
+  z-index: 1;
+  border-radius: 15px;
+  overflow: hidden;
 }
 
-.package-img::before {
-  content: "Standart Paket";
+.price-content .price-cart:nth-child(1) {
+  background-image: url(../images/card/cart-1.jpg);
+}
+
+.price-content .price-cart:nth-child(2) {
+  background-image: url(https://img.vivense.com/480x320/images/88a3ebd47ef244d597d54f31a72cd4ae.jpg);
+}
+
+.price-content .price-cart:nth-child(3) {
+  background-image: url(https://beyazitmobilyam.com/wp-content/uploads/2022/08/0357B39A-D5F5-4D2A-A8D7-D386C108A594.jpeg);
+}
+
+.price-content .price-cart:nth-child(4) {
+  background-image: url(https://xcdn.next.co.uk/common/items/default/default/itemimages/3_4Ratio/product/lge/677484s.jpg?im=Resize,width=750);
+}
+
+.price-content .price-cart:nth-child(5) {
+  background-image: url(https://msalim.com.my/wp-content/uploads/2023/05/THERM_12.webp);
+}
+
+.price-content .price-cart:nth-child(6) {
+  background-image: url(https://productimages.hepsiburada.net/s/28/375-375/10217443754034.jpg);
+}
+
+.price-content .price-cart:nth-child(7) {
+  background-image: url(https://www.kirkambarmobilya.com/assets/img/603633212f25fproduct.jpeg);
+}
+
+.price-content .price-cart:nth-child(8) {
+  background-image: url(https://www.isbiryatak.com/hypersense-paket-yayli-yatak-paket-yay-teknolojisi-isbir-yatak-hypersense-1904-43-B.jpg);
+}
+
+.price-content .price-cart:nth-child(9) {
+  background-image: url(https://www.othellobedding.com/othello-woolla-yun-yorgan-195x215-cm-yun-yorgan-5574-59-B.jpg);
+}
+
+.price-content .price-cart:nth-child(10) {
+  background-image: url(https://linensociety.com/cdn/shop/products/heirloom-pillow_14294b09-8232-4d5d-a305-022b802669ab.jpg?v=1584402804&width=1400);
+}
+
+.price-content .price-cart:nth-child(11) {
+  background-image: url(https://witcdn.isbiryatak.com/enweighted-blanked-isi-dengeleyici-yorganlar-isbir-yatak-1588-36-B.jpg);
+}
+
+.price-content .price-cart:nth-child(12) {
+  background-image: url(https://cdn.decornation.in/wp-content/uploads/2020/07/modern-dining-table-chairs.jpg);
+}
+
+.price-cart h3 {
+  font-size: 26px;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+.price-cart p {
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.price-cart h3,
+.price-cart p {
+  position: relative;
+  z-index: 2;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.price-cart h3 {
+  transform: translateY(0);
+}
+
+.price-cart p {
+  transform: translateY(0);
+}
+
+/* Hover zamanı */
+.price-cart:hover {
+  transform: scale(1.01);
+}
+
+.price-cart:hover::before {
+  opacity: 0.7;
+}
+
+.price-cart:hover h3 {
+  transform: translateY(-20px);
+}
+
+.price-cart:hover p {
+  transform: translateY(-15px);
+}
+
+/* CTA düyməsi */
+.price-cart .cta {
   position: absolute;
-  top: 0px;
-  left: 0px;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%) translateY(30px);
+  opacity: 0;
+  z-index: 2;
+  background-color: rgba(255, 255, 255, 0.9);
+  background: linear-gradient(to right, #3c922e 0%, #71b428 100%);
+  color: #000;
+  padding: 10px 32px;
+  border-radius: 14px;
+  font-weight: 600;
+  transition: all 0.4s ease;
+  color: white;
+}
+
+.price-cart:hover .cta {
+  transform: translateX(-50%) translateY(0);
+  opacity: 1;
+}
+/* price css end */
+
+/* gallery css start */
+.galery-container {
+  height: min-content;
+  margin-top: 80px;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+.card {
+  position: absolute;
+  width: 828px;
+  height: 400px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  transition: transform 0.4s ease;
+  cursor: pointer;
+  border-radius: 11px;
+}
+
+.galery-main {
   width: 100%;
   height: 100%;
-  background: linear-gradient(
-    to bottom,
-    rgba(33, 35, 33, 0.5),
-    rgba(53, 56, 50, 0.7)
-  );
-  border-radius: 15px 15px 0px 0px;
+  transform-style: preserve-3d;
   display: flex;
   justify-content: center;
+  flex-direction: column;
   align-items: center;
-  font-size: 32px;
-  font-weight: 700;
-  color: white;
 }
 
-.package-img.standart::before {
-  content: "Standart Paket";
+.cards {
+  position: relative;
+  width: 100%;
+  height: 380px;
+  margin-bottom: 20px;
 }
 
-.package-img.silver::before {
-  content: "Silver Paket";
-}
-
-.package-img.gold::before {
-  content: "Gold Paket";
-}
-
-
-.package-img img {
+img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  border-radius: 15px 15px 0px 0px;
-}
-
-.package-img .package-total {
-  padding: 4px 10px;
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  background-color: #05939ffc;
-  border-top-left-radius: 8px;
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
-  color: white;
-}
-
-.package-total span {
-  font-size: 14px;
-  font-weight: 700;
-}
-
-.package-content .package-box .package-list {
-  width: 100%;
-  height: min-content;
-  padding: 25px 30px;
-}
-
-.package-content .package-box .package-list ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-.package-content .package-box .package-list ul li {
-  padding-bottom: 15px;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  color: #323232;
-}
-
-.package-content .package-box .package-list ul li img {
-  width: 20px;
-  height: 20px;
+  border-radius: 10px;
   object-fit: cover;
 }
 
-.package-content .package-box .package-btn a {
-  width: max-content;
-  background: linear-gradient(to right, #3c922e 0%, #71b428 100%);
-  border-radius: 20px;
-  padding: 12px 16px;
-  color: white;
+#item-1:checked ~ .cards #song-3,
+#item-2:checked ~ .cards #song-1,
+#item-3:checked ~ .cards #song-2 {
+  transform: translatex(-40%) scale(0.8);
+  opacity: 0.4;
+  z-index: 0;
 }
-/* Price css end */
+
+#item-1:checked ~ .cards #song-2,
+#item-2:checked ~ .cards #song-3,
+#item-3:checked ~ .cards #song-1 {
+  transform: translatex(40%) scale(0.8);
+  opacity: 0.4;
+  z-index: 0;
+}
+
+#item-1:checked ~ .cards #song-1,
+#item-2:checked ~ .cards #song-2,
+#item-3:checked ~ .cards #song-3 {
+  transform: translatex(0) scale(1);
+  opacity: 1;
+  z-index: 1;
+
+  img {
+    box-shadow: 0px 0px 5px 0px rgba(81, 81, 81, 0.47);
+  }
+}
+/* gallery css end */
 
 /* Contact css start */
 .contact-container {
@@ -395,8 +558,7 @@ nav .nav-btns a {
 }
 
 .contact-content .contact-box .contact-icon img {
-  width: 60px;
-  height: 60px;
+  width: 55px;
   object-fit: cover;
 }
 
@@ -411,7 +573,7 @@ nav .nav-btns a {
 }
 
 .colored-contact-item {
-  background: linear-gradient(to right, #3c922e 0%, #71b428 100%);
+  background-color: #71b428;
 }
 
 .colored-contact-item p,
@@ -423,7 +585,7 @@ nav .nav-btns a {
 /* Scroll Top */
 .scroll-to-top {
   position: fixed;
-  right: 20px;
+  left: 20px;
   bottom: 30px;
   width: 50px;
   height: 50px;
@@ -460,6 +622,10 @@ nav .nav-btns a {
   width: 20px;
   height: 20px;
 }
+
+.copyright {
+  background-color: #1e2c3a;
+}
 /* Scroll Top */
 
 /* move css start */
@@ -467,7 +633,7 @@ nav .nav-btns a {
   height: 570px;
   margin-top: 80px;
   border-radius: 25px;
-  background-image: url(../images/bg-hero/Group\ 82.png);
+  background-image: url(https://img.freepik.com/free-vector/dark-gradient-background-with-copy-space_53876-99548.jpg?t=st=1746761424~exp=1746765024~hmac=89f5d239e050b0abbfe875be287812efe900a253189eac7863e91b22f895d39d&w=1380) !important;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -475,11 +641,9 @@ nav .nav-btns a {
 }
 
 .move-container .move-img {
-  width: min-content;
-  height: min-content;
   position: absolute;
   top: 30px;
-  right: 50px;
+  right: 70px;
 }
 
 .move-container .move-content {
@@ -529,7 +693,11 @@ nav .nav-btns a {
 
 /* footer css start */
 .footer-main {
-  background: linear-gradient(to right, #3c922e 0%, #71b428 100%);
+  background-image: url(../images/footer/Group\ 116.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+
   padding: 100px 0px;
   width: 100%;
   height: min-content;
@@ -545,10 +713,14 @@ nav .nav-btns a {
   height: min-content;
 }
 
+.footer-box img {
+  width: 150px;
+}
+
 .footer-main .container .footer-box p {
   font-size: 16px;
   color: #fff;
-	line-height: 1.8em;
+  line-height: 1.8em;
 }
 
 .footer-main .container .footer-box h3 {
@@ -566,11 +738,16 @@ nav .nav-btns a {
 
 .footer-main .container .footer-box ul li {
   padding-bottom: 15px;
+  color: #fff;
+}
+
+.footer-main .container .footer-box ul li img {
+  width: 23px;
 }
 
 .footer-main .container .footer-box ul li a {
   color: #fff;
-  font-size: 16px;
+  font-size: 19px;
   transition: bottom 0.3s ease;
 }
 
@@ -588,4 +765,346 @@ nav .nav-btns a {
   width: 400px;
   height: 270px;
   border-radius: 25px;
+}
+
+.sticky {
+  background-color: #1e2c3a;
+}
+
+.footer-first {
+  width: 30%;
+}
+
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden !important;
+  }
+
+  .container {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+
+  /* MOBILE NAVBAR RESPONS */
+  .header-top-content,
+  .desk-nav {
+    display: none !important;
+  }
+
+  .mobile-nav-main {
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0px 50px;
+    color: white;
+    position: fixed;
+    z-index: 999;
+    padding: 20px 15px;
+    transition: 0.3s all ease;
+  }
+
+  .mobile-logo {
+    width: 30%;
+  }
+
+  .mobile-logo img {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .hamburger {
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+  /* Sidebar */
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: -300px;
+    width: 285px;
+    height: 100vh;
+    background-color: #1e2c3a;
+    transition: left 0.3s ease;
+    z-index: 1000;
+    display: flex !important;
+    flex-direction: column;
+    overflow-y: hidden;
+  }
+
+  .sidebar.active {
+    left: 0;
+  }
+
+  .sidebar-header {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .sidebar-logo {
+    width: 40%;
+  }
+
+  .close-btn {
+    font-size: 22px;
+    cursor: pointer;
+    color: white;
+  }
+
+  .sidebar-menu {
+    padding: 20px;
+    list-style: none;
+    flex-grow: 1; /* Menü alanını genişlet */
+    overflow-y: auto; /* Sadece menüde scroll olsun */
+  }
+
+  .sidebar-menu li {
+    margin-bottom: 15px;
+  }
+
+  .sidebar-menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    display: block;
+    padding: 8px 0;
+  }
+
+  /* YENİ: Menü ikonları */
+  .sidebar-menu li a i {
+    margin-right: 10px;
+    width: 20px;
+    text-align: center;
+  }
+
+  /* YENİ: Hizmet Butonu */
+  .sidebar-button {
+    padding: 20px;
+    margin-top: auto; /* Alt kısma yapıştır */
+    border-top: 1px solid #2c3e50;
+    flex-shrink: 0;
+  }
+
+  .service-btn {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(to right, #3c922e 0%, #71b428 44%);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .service-btn:hover {
+    background-color: #c0392b;
+  }
+
+  /* YENİ: Sosyal Medya İkonları */
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px;
+    border-top: 1px solid #2c3e50;
+    flex-shrink: 0;
+  }
+
+  .social-icon {
+    color: white;
+    font-size: 20px;
+    transition: color 0.3s;
+  }
+
+  .social-icon:hover {
+    color: #3498db;
+  }
+
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    display: none;
+  }
+
+  .overlay.active {
+    display: block;
+  }
+
+  /* RESPONSIVE HERO BG */
+  .hero-bg {
+    border-radius: 0px;
+    display: block;
+    padding: 0px !important;
+  }
+  .hero-bg .hero-circle {
+    display: none;
+  }
+
+  .hero-bg .hero-content {
+    width: 100%;
+    height: auto;
+  }
+
+  .hero-bg .hero-content h1 span {
+    font-size: 35px;
+    font-weight: 800;
+  }
+
+  .about-content {
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+
+  .about-img {
+    width: 100% !important;
+  }
+
+  .about-img img {
+    width: 100% !important;
+    height: 291px !important;
+  }
+
+  .about-container .about-content .about-info-box {
+    width: 100%;
+    padding-left: 0px;
+    margin-top: 30px;
+    height: auto;
+  }
+
+  .about-info-box h2 {
+    line-height: 35px;
+    font-size: 22px;
+  }
+  .about-info-box p {
+    margin-top: 25px !important;
+  }
+
+  .about-info-box .about-list ul li {
+    padding-bottom: 10px;
+  }
+
+  /* SERVICE  */
+  .service-container .service-content {
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .service-content .service-box {
+    width: 100%;
+    height: auto;
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px,
+      rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+    padding: 40px 30px;
+  }
+
+  /* PRICE */
+  .price-container .price-content {
+    gap: 20px;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .price-content .price-cart {
+    width: 100%;
+  }
+
+  .price-cart h3 {
+    font-size: 25px;
+  }
+
+  .price-cart p {
+    font-size: 24px;
+  }
+
+  .price-cart .cta {
+    padding: 9px 14px;
+  }
+
+  /* Gallery Card */
+  .card {
+    position: absolute;
+    width: 63%;
+    height: 250px;
+  }
+
+  .cards {
+    height: 260px;
+  }
+
+  /* .galery-container {
+  display: none;
+} */
+
+  /* Contact Respons */
+  .contact-content {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .contact-content .contact-box {
+    width: 100%;
+    height: auto;
+    padding: 20px 30px;
+    border-radius: 25px;
+  }
+
+  /* Move Response */
+
+  .move-container {
+    height: auto;
+    border-radius: 0px;
+    padding: 60px 15px !important;
+  }
+
+  .move-container .move-content {
+    width: 100% !important;
+    padding: 0px;
+    margin: 0px !important;
+  }
+
+  .move-img {
+    display: none;
+  }
+
+  .move-content h2 {
+    font-size: 26px;
+    line-height: 40px;
+  }
+
+  .move-content ul {
+    margin: 30px 0px 0px;
+    gap: 15px;
+  }
+
+  /* Footer Respons start */
+  .footer-main .container {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .footer-main .container .footer-box:nth-child(1) {
+    width: 100%;
+    height: auto;
+    padding: 0px;
+  }
+
+  .footer-main .container .footer-box p {
+    font-size: 18px;
+  }
+
+  .footer-first {
+    width: 100%;
+  }
 }
