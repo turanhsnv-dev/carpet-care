@@ -68,12 +68,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
 window.addEventListener("scroll", function () {
   const navbar = document.querySelector(".mobile-nav-main");
-  const deskNav = document.querySelector(".desk-nav");
   if (window.scrollY > 50) {
     navbar.classList.add("sticky");
-    deskNav.classList.add("sticky");
   } else {
     navbar.classList.remove("sticky");
-    deskNav.classList.remove("sticky");
   }
 });
